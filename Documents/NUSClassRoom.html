@@ -1,67 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>NUSClassRoom</title>
 	<script type="text/javascript" src="javaScript/jquery-1.11.1.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/NUS.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Lobster" rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" tyle='text/css'>
+
+	<!-- href="bootstrap/css/bootstrap.min.css" rel="stylesheet"-->
 </head>
-
 <body>
-	<div class="logo"><h2>NUSClassRoom</h2></div>
+	<div class="header">
+		<h1>NUSClassRoom</h1>
+	</div>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="navbar navbar-default">
-				<div class="navbar-header">
-					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="NUSClassRoom.html">NUSClassRoom</a>
+
+			<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+				<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+				<li><a href="#about" data-toggle="tab">About</a></li>
+				<li><a href="#contact" data-toggle="tab">Contact Us</a></li>
+				<!--dropdown-->
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Dropdown <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+						<li class="divider"></li>
+						<li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade active in" id="home">
 				</div>
-				<div class="navbar-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Active</a></li>
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">Dropdown header</li>
-								<li><a href="#">Separated link</a></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left">
-						<input class="form-control col-lg-8" type="text" placeholder="Search">
+				<div class="tab-pane fade" id="about">
+					<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+				</div>
+				<div class="tab-pane fade" id="contact">
+					<form class="form-horizontal">
+						<fieldset class="contact">
+							<div margin top: 20px></div>
+							<div class="form-group">
+								<label for="inputEmail" class="col-lg-2 control-label">Email: </label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="inputEmail" placeholder="Enter your Email address if you want us to get back you">
+								</div>
+							</div>
+							<div class="form-group">
+							</div>
+							<div class="form-group">
+								<label for="textArea" class="col-lg-2 control-label">Your message for us: </label>
+								<div class="col-lg-10">
+									<textarea class="form-control" rows="10" id="textArea"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+							</div>
+							<div class="form-group">
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button class="btn btn-default">Cancel</button>
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</fieldset>
 					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
-					</ul>
+				</div>
+
+				<div class="tab-pane fade" id="dropdown1">
+					<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+				</div>
+				<div class="tab-pane fade" id="dropdown2">
+					<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="bootstrap/js/respond.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script type="js/respond.js"></script>
 </body>
 </html>

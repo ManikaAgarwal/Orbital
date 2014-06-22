@@ -1,4 +1,14 @@
-.logo {
-	
+.header{
 	text-align: center;
 }
+
+#about{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.contact{
+	margin-right: 200px;
+}
+
+
